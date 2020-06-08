@@ -22,22 +22,22 @@ body {
 #two {
     position: absolute;
     z-index: 2;
-    left: 20px;
-    top: 100px;
+    left: 10px;
+    top: 130px;
 }
 
 #three {
     position: absolute;
-    right: 20px;
-    bottom: 100px;
+    right: 250px;
+    bottom: 5px;
     z-index: 3;
 }
 
 #four {
     position: absolute;
     z-index: 4;
-    right: 240px;
-    bottom: 190px;
+    right: 80px;
+    bottom: 70px;
 }
 
 .startPiece {
