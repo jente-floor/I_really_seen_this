@@ -1,25 +1,32 @@
+const numberofImages = document.images.length - 1
+const idArray = ["one", "two", "three", "four", "five", "six", "seven", "eight", "nine"]
+
+showImages()
+dragAbleElements()
+
 function showImages() {
-    setTimeout(() => unhideImage("one"), 3000)
-    setTimeout(() => unhideImage("two"), 6000)
-    setTimeout(() => unhideImage("three"), 9000)
-    setTimeout(() => unhideImage("four"), 12000)
-    setTimeout(() => unhideImage("five"), 15000)
+    let timer = 3000
+    for (i = 0; i < numberofImages; i++) {
+        sleep(timer).then(unhideImage(unhideImage[i]))
+        timer += 3000
+    }
+
 }
 
+function sleep(ms, idNumber) {
+    return new Promise(() => setTimeout(unhideImage(idNumber), ms));
+}
 
 function unhideImage(theimage) {
     var element = document.getElementById(theimage);
     element.classList.remove("hideItem");
 }
 
-showImages()
-
-
-dragElement(document.getElementById("one"));
-dragElement(document.getElementById("two"));
-dragElement(document.getElementById("three"));
-dragElement(document.getElementById("four"));
-// dragElement(document.getElementById("five"));
+const dragAbleElements = () => {
+    for (i = 0; i < numberofImages; i++) {
+        dragElement(document.getElementById(idArray[i]));
+    }
+}
 
 function dragElement(elmnt) {
     var pos1 = 0,
