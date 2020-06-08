@@ -1,5 +1,54 @@
 body {
     border: 0;
     background-color: black;
-    color: white
+    color: white;
+    width: 99vw;
+    height: 98vh;
+}
+
+#images {
+    position: relative;
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+#one {
+    position: absolute;
+    z-index: 0;
+    left: 0;
+}
+
+#two {
+    position: absolute;
+    z-index: 2;
+    left: 20px;
+    top: 100px;
+}
+
+#three {
+    position: absolute;
+    right: 20px;
+    bottom: 100px;
+    z-index: 3;
+}
+
+#four {
+    position: absolute;
+    z-index: 4;
+    right: 240px;
+    bottom: 190px;
+}
+
+.startPiece {
+    position: relative;
+    z-index: 0;
+    align-self: center;
+    margin-left: auto;
+    margin-right: auto;
+    justify-self: center;
+}
+
+.hideItem {
+    display: none;
 }
