@@ -17,6 +17,7 @@ body {
     position: absolute;
     z-index: 0;
     left: 0;
+    cursor: move;
 }
 
 #two {
@@ -24,6 +25,7 @@ body {
     z-index: 2;
     left: 10px;
     top: 130px;
+    cursor: move;
 }
 
 #three {
@@ -101,3 +103,5 @@ body {
     left: 380px;
     top: 501px;
 }
+.moveable {}
+
