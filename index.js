@@ -1,5 +1,5 @@
 const numberofImages = document.images.length - 1
-const idArray = ["one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "eleven", "twelve", "video1"]
+const idArray = ["one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen", "seventeen", "eighteen", "nineteen", "video1"]
 const buttonRearrange = document.getElementById("rearrange")
 
 showImages()
@@ -50,7 +50,6 @@ function dragAbleElements() {
 }
 
 function dragElement(elmnt) {
-    console.log("I'm dragging", elmnt)
     var pos1 = 0,
         pos2 = 0,
         pos3 = 0,
