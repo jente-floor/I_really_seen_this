@@ -1,19 +1,21 @@
 const numberofImages = document.images.length - 1
 const idArray = ["one", "two", "three", "four", "five", "six", "seven", "eight", "nine"]
+const buttonRearrange = document.getElementById("rearrange")
 
 showImages()
 dragAbleElements()
-setTimeout(()=> hideheader(), 7000)
-setTimeout(()=> hidesubtext(), 7000)
-setTimeout(()=> unhidebackground(), 2000)
+setTimeout(() => hideheader(), 7000)
+setTimeout(() => hidesubtext(), 7000)
+setTimeout(() => unhidebackground(), 2000)
+buttonRearrange.addEventListener('click', hidebackground)
 
 
 
 function showImages() {
-  setTimeout(()=> unhideImage("one"), 7000)
-  setTimeout(()=> unhideImage("two"), 12000)
-  setTimeout(()=> unhideImage("three"), 17000)
-  setTimeout(()=> unhideImage("four"), 22000)
+    setTimeout(() => unhideImage("one"), 7000)
+    setTimeout(() => unhideImage("two"), 12000)
+    setTimeout(() => unhideImage("three"), 17000)
+    setTimeout(() => unhideImage("four"), 22000)
 
 }
 
@@ -89,7 +91,6 @@ function unhidebackground() {
 }
 
 function hidebackground() {
-    console.log("unhidgin")
     var header = document.getElementsByClassName("background")[0]
     header.classList.add("hideItem")
 }
