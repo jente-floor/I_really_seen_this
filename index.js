@@ -9,6 +9,7 @@ setTimeout(() => hidesubtext(), 9000)
 setTimeout(() => unhidebackground(), 22000)
 buttonRearrange.addEventListener('click', hidebackground)
 
+
 function showImages() {
     setTimeout(() => unhideImage("one"), 9000)
     setTimeout(() => unhideImage("two"), 14000)
@@ -31,18 +32,19 @@ function showImages() {
     setTimeout(() => unhideImage("nineteen"), 18000)
 }
 
-function sleep(ms, idNumber) {
-    return new Promise(() => setTimeout(unhideImage(idNumber), ms));
-}
 
 function unhideImage(theimage) {
-    var element = document.getElementById(theimage);
-    element.classList.remove("hideItem");
+    if (document.getElementById(theimage) !== null) {
+        var element = document.getElementById(theimage);
+        element.classList.remove("hideItem");
+    }
 }
 
 function dragAbleElements() {
-    for (i = 0; i < numberofImages; i++) {
-        dragElement(document.getElementById(idArray[i]));
+    for (i = 0; i < idArray.length; i++) {
+        if (document.getElementById(idArray[i]) !== undefined) {
+            dragElement(document.getElementById(idArray[i]));
+        }
     }
     dragElement(document.getElementById("video1"))
 }
@@ -53,9 +55,9 @@ function dragElement(elmnt) {
         pos3 = 0,
         pos4 = 0;
 
-
-    elmnt.onmousedown = dragMouseDown;
-
+    if (elmnt !== null) {
+        elmnt.onmousedown = dragMouseDown;
+    }
 
     function dragMouseDown(e) {
         e = e || window.event;
@@ -90,13 +92,12 @@ function dragElement(elmnt) {
 
 function hideheader() {
     var header = document.getElementsByClassName("title")[0]
-    console.log("hide header",header)
     header.classList.add("hideItem")
 }
 
 function hidesubtext() {
     var header = document.getElementsByClassName("introSubtext")[0]
-    console.log("hide subtext",header)
+    console.log("hide subtext", header)
     header.classList.add("hideItem")
 }
 
