@@ -1,28 +1,27 @@
 const numberofImages = document.images.length - 1
-const idArray = ["one", "two", "three", "four", "five", "six", "seven", "eight", "nine","ten", "eleven", "twelve"]
+const idArray = ["one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "eleven", "twelve"]
+const buttonRearrange = document.getElementById("rearrange")
 
 showImages()
 dragAbleElements()
-setTimeout(()=> hideheader(), 7000)
-setTimeout(()=> hidesubtext(), 7000)
-setTimeout(()=> unhidebackground(), 1000)
-setTimeout(()=> unhidebackground2(), 1000)
-setTimeout(()=> unhidebackground3(), 1000)
+setTimeout(() => hideheader(), 7000)
+setTimeout(() => hidesubtext(), 7000)
+setTimeout(() => unhidebackground(), 3000)
 buttonRearrange.addEventListener('click', hidebackground)
 
 function showImages() {
-  setTimeout(()=> unhideImage("one"), 7000)
-  setTimeout(()=> unhideImage("two"), 12000)
-  setTimeout(()=> unhideImage("three"), 17000)
-  setTimeout(()=> unhideImage("four"), 2000)
-  setTimeout(()=> unhideImage("five"), 3000)
-  setTimeout(()=> unhideImage("six"), 8000)
-  setTimeout(()=> unhideImage("seven"), 13000)
-  setTimeout(()=> unhideImage("eight"), 16000)
-  setTimeout(()=> unhideImage("nine"), 19000)
-  setTimeout(()=> unhideImage("ten"), 22000)
-  setTimeout(()=> unhideImage("eleven"), 25000)
-  setTimeout(()=> unhideImage("twelve"), 28000)
+    setTimeout(() => unhideImage("one"), 7000)
+    setTimeout(() => unhideImage("two"), 12000)
+    setTimeout(() => unhideImage("three"), 17000)
+    setTimeout(() => unhideImage("four"), 2000)
+    setTimeout(() => unhideImage("five"), 3000)
+    setTimeout(() => unhideImage("six"), 8000)
+    setTimeout(() => unhideImage("seven"), 13000)
+    setTimeout(() => unhideImage("eight"), 16000)
+    setTimeout(() => unhideImage("nine"), 19000)
+    setTimeout(() => unhideImage("ten"), 22000)
+    setTimeout(() => unhideImage("eleven"), 25000)
+    setTimeout(() => unhideImage("twelve"), 28000)
 }
 
 function sleep(ms, idNumber) {
@@ -99,9 +98,5 @@ function unhidebackground() {
 function hidebackground() {
     var header = document.getElementsByClassName("background")[0]
     header.classList.add("hideItem")
-}
-
-function unhidebackground2() {
-    var header = document.getElementsByClassName("background2")[0]
-    header.classList.remove("hideItem")
+    setTimeout(unhidebackground, 3000)
 }
