@@ -1,27 +1,34 @@
 const numberofImages = document.images.length - 1
-const idArray = ["one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "eleven", "twelve"]
+const idArray = ["one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "eleven", "twelve", "video1"]
 const buttonRearrange = document.getElementById("rearrange")
 
 showImages()
 dragAbleElements()
-setTimeout(() => hideheader(), 7000)
-setTimeout(() => hidesubtext(), 7000)
-setTimeout(() => unhidebackground(), 3000)
+setTimeout(() => hideheader(), 9000)
+setTimeout(() => hidesubtext(), 9000)
+setTimeout(() => unhidebackground(), 22000)
 buttonRearrange.addEventListener('click', hidebackground)
 
 function showImages() {
-    setTimeout(() => unhideImage("one"), 7000)
-    setTimeout(() => unhideImage("two"), 12000)
-    setTimeout(() => unhideImage("three"), 17000)
-    setTimeout(() => unhideImage("four"), 2000)
-    setTimeout(() => unhideImage("five"), 3000)
-    setTimeout(() => unhideImage("six"), 8000)
-    setTimeout(() => unhideImage("seven"), 13000)
-    setTimeout(() => unhideImage("eight"), 16000)
-    setTimeout(() => unhideImage("nine"), 19000)
-    setTimeout(() => unhideImage("ten"), 22000)
-    setTimeout(() => unhideImage("eleven"), 25000)
-    setTimeout(() => unhideImage("twelve"), 28000)
+    setTimeout(() => unhideImage("one"), 9000)
+    setTimeout(() => unhideImage("two"), 14000)
+    setTimeout(() => unhideImage("three"), 19000)
+    setTimeout(() => unhideImage("four"), 4000)
+    setTimeout(() => unhideImage("five"), 8000)
+    setTimeout(() => unhideImage("six"), 14000)
+    setTimeout(() => unhideImage("seven"), 18000)
+    setTimeout(() => unhideImage("eight"), 5000)
+    setTimeout(() => unhideImage("nine"), 10000)
+    setTimeout(() => unhideImage("ten"), 15000)
+    setTimeout(() => unhideImage("eleven"), 19000)
+    setTimeout(() => unhideImage("twelve"), 5000)
+    setTimeout(() => unhideImage("thirteen"), 10000)
+    setTimeout(() => unhideImage("fourteen"), 15000)
+    setTimeout(() => unhideImage("fifteen"), 20000)
+    setTimeout(() => unhideImage("sixteen"), 5000)
+    setTimeout(() => unhideImage("seventeen"), 10000)
+    setTimeout(() => unhideImage("eighteen"), 15000)
+    setTimeout(() => unhideImage("nineteen"), 18000)
 }
 
 function sleep(ms, idNumber) {
@@ -37,6 +44,7 @@ function dragAbleElements() {
     for (i = 0; i < numberofImages; i++) {
         dragElement(document.getElementById(idArray[i]));
     }
+    dragElement(document.getElementById("video1"))
 }
 
 function dragElement(elmnt) {
@@ -82,11 +90,13 @@ function dragElement(elmnt) {
 
 function hideheader() {
     var header = document.getElementsByClassName("title")[0]
+    console.log("hide header",header)
     header.classList.add("hideItem")
 }
 
 function hidesubtext() {
     var header = document.getElementsByClassName("introSubtext")[0]
+    console.log("hide subtext",header)
     header.classList.add("hideItem")
 }
 
@@ -98,5 +108,5 @@ function unhidebackground() {
 function hidebackground() {
     var header = document.getElementsByClassName("background")[0]
     header.classList.add("hideItem")
-    setTimeout(unhidebackground, 3000)
+    setTimeout(unhidebackground, 15000)
 }
