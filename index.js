@@ -3,13 +3,17 @@ const idArray = ["one", "two", "three", "four", "five", "six", "seven", "eight",
 
 showImages()
 dragAbleElements()
+setTimeout(()=> hideheader(), 7000)
+setTimeout(()=> hidesubtext(), 7000)
+setTimeout(()=> unhidebackground(), 2000)
+
+
 
 function showImages() {
-    let timer = 3000
-    for (i = 0; i < numberofImages; i++) {
-        sleep(timer).then(unhideImage(unhideImage[i]))
-        timer += 3000
-    }
+  setTimeout(()=> unhideImage("one"), 7000)
+  setTimeout(()=> unhideImage("two"), 12000)
+  setTimeout(()=> unhideImage("three"), 17000)
+  setTimeout(()=> unhideImage("four"), 22000)
 
 }
 
@@ -22,7 +26,7 @@ function unhideImage(theimage) {
     element.classList.remove("hideItem");
 }
 
-const dragAbleElements = () => {
+function dragAbleElements() {
     for (i = 0; i < numberofImages; i++) {
         dragElement(document.getElementById(idArray[i]));
     }
@@ -67,4 +71,25 @@ function dragElement(elmnt) {
         document.onmouseup = null;
         document.onmousemove = null;
     }
+}
+
+function hideheader() {
+    var header = document.getElementsByClassName("title")[0]
+    header.classList.add("hideItem")
+}
+
+function hidesubtext() {
+    var header = document.getElementsByClassName("introSubtext")[0]
+    header.classList.add("hideItem")
+}
+
+function unhidebackground() {
+    var header = document.getElementsByClassName("background")[0]
+    header.classList.remove("hideItem")
+}
+
+function hidebackground() {
+    console.log("unhidgin")
+    var header = document.getElementsByClassName("background")[0]
+    header.classList.add("hideItem")
 }
