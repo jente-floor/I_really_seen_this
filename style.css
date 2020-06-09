@@ -22,7 +22,10 @@ body {
 #one {
     position: absolute;
     z-index: 0;
-    left: 0;
+    width: 475px;
+	height: 672px;
+	left: 50px;
+	top: 177px;
     cursor: move;
     resize: both;
     overflow: auto;
@@ -31,58 +34,72 @@ body {
 #two {
     position: absolute;
     z-index: 2;
-    left: 10px;
-    top: 130px;
+	left: 811px;
+	top: 357px;
     resize: both;
     cursor: move;
 }
 
 #three {
     position: absolute;
-    right: 250px;
-    bottom: 5px;
+    left: 737px;
+	top: 251px;
     resize: both;
     z-index: 3;
 }
 
 #four {
     position: absolute;
+    max-height: 400px;
+    max-width: auto;
     z-index: 4;
     right: 80px;
     bottom: 70px;
 }
 #five {
     position: absolute;
-    right: 150px;
+    max-height: 600px;
+    max-width: auto;
+    right: 850px;
     bottom: 5px;
     z-index: 5;
 }
 #six {
     position: absolute;
+    max-height: 650px;
+    max-width: auto;
     right: 250px;
     bottom: 5px;
     z-index: 6;
 }
 #seven {
     position: absolute;
-    right: 450px;
-    bottom: 15px;
+    max-height: 400px;
+    max-width: auto;
+    right: 850px;
+    bottom: 5px;
     z-index: 7;
 }
 #eight {
     position: absolute;
+    max-height: 300px;
+    max-width: auto;
     right: 550px;
     bottom: 5px;
     z-index: 8;
 }
 #nine {
     position: absolute;
+    max-height: 450px;
+    max-width: auto;
     right: 250px;
     bottom: 20px;
     z-index: 9;
 }
 #ten {
     position: absolute;
+    max-height: 375px;
+    max-width: auto;
     right: 550px;
     bottom: 40px;
     z-index: 10;
@@ -90,6 +107,8 @@ body {
 }
 #eleven {
     position: absolute;
+    max-height: 600px;
+    max-width: auto;
     right: 150px;
     bottom: 2px;
     z-index: 11;
@@ -97,6 +116,8 @@ body {
 }
 #twelve {
     position: absolute;
+    max-height: 690px;
+    max-width: auto;
     right: 50px;
     bottom: 10px;
     z-index: 12;
@@ -104,6 +125,8 @@ body {
 }
 #thirteen {
     position: absolute;
+    max-height: 490px;
+    max-width: auto;
     right: 100px;
     bottom: 70px;
     z-index: 13;
@@ -111,6 +134,8 @@ body {
 }
 #fourteen {
     position: absolute;
+    max-height: 390px;
+    max-width: auto;
     right: 80px;
     bottom: 100px;
     z-index: 14;
@@ -132,6 +157,8 @@ body {
 }
 #seventeen {
     position: absolute;
+    max-height: 590px;
+    max-width: auto;
     right: 180px;
     bottom: 100px;
     z-index: 17;
@@ -139,29 +166,38 @@ body {
 }
 #eighteen {
     position: absolute;
-    right: 80px;
-    bottom: 600px;
+    max-height: 590px;
+    max-width: auto;
+    left: 15px;
+    bottom: 20px;
     z-index: 18;
 
 }
 #nineteen {
     position: absolute;
-    right: 380px;
-    bottom: 200px;
+    max-height: 690px;
+    max-width: auto;
+    right: 180px;
+    bottom: 50px;
     z-index: 19;
 
 }
 #video1 {
     z-index: 30;
     position: absolute;
+    right: 180px;
+    bottom: 50px;
 }
 #video2 {
     z-index: 31;
     position: absolute;
+    bottom: 100px;
 }
 #video3 {
     z-index: 32;
     position: absolute;
+    left: 120px;
+    bottom: 90px;
 }
 .holder {
     height: 100vh;
@@ -222,7 +258,7 @@ body {
     position: absolute;
     width: 100%;
     height: 100%;
-    z-index:49;
+    z-index:499;
 }
 
 .Forward {
@@ -235,7 +271,7 @@ body {
     letter-spacing: 0.2px;
     right: 380px;
     top: 401px;
-    z-index: 50;
+    z-index: 500;
     background-color: black;
     
 }
@@ -249,7 +285,7 @@ body {
     letter-spacing: 0.2px;
     left: 380px;
     top: 401px;
-    z-index: 50;
+    z-index: 500;
     background-color: black;
    
 }
