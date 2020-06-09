@@ -1,18 +1,19 @@
 const numberofImages = document.images.length - 1
 const idArray = ["one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen", "seventeen", "eighteen", "nineteen", "video1"]
 const buttonRearrange = document.getElementById("rearrange")
+let zCounter = 31
 
 showImages()
 dragAbleElements()
-setTimeout(() => hideheader(), 9000)
-setTimeout(() => hidesubtext(), 9000)
+setTimeout(() => hideheader(), 12000)
+setTimeout(() => hidesubtext(), 12000)
 setTimeout(() => unhidebackground(), 22000)
 buttonRearrange.addEventListener('click', hidebackground)
 
 
 function showImages() {
-    setTimeout(() => unhideImage("one"), 9000)
-    setTimeout(() => unhideImage("two"), 14000)
+    setTimeout(() => unhideImage("one"), 12000)
+    setTimeout(() => unhideImage("two"), 15000)
     setTimeout(() => unhideImage("three"), 19000)
     setTimeout(() => unhideImage("four"), 4000)
     setTimeout(() => unhideImage("five"), 8000)
@@ -81,10 +82,11 @@ function dragElement(elmnt) {
         // set the element's new position:
         elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
         elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+        elmnt.style.zIndex = zCounter
     }
 
     function closeDragElement() {
-
+        zCounter++
         document.onmouseup = null;
         document.onmousemove = null;
     }
