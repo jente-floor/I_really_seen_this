@@ -50,6 +50,7 @@ function dragAbleElements() {
 }
 
 function dragElement(elmnt) {
+    console.log("I'm dragging", elmnt)
     var pos1 = 0,
         pos2 = 0,
         pos3 = 0,
