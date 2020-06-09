@@ -8,6 +8,7 @@ setTimeout(()=> hidesubtext(), 7000)
 setTimeout(()=> unhidebackground(), 1000)
 setTimeout(()=> unhidebackground2(), 1000)
 setTimeout(()=> unhidebackground3(), 1000)
+buttonRearrange.addEventListener('click', hidebackground)
 
 function showImages() {
   setTimeout(()=> unhideImage("one"), 7000)
@@ -96,7 +97,6 @@ function unhidebackground() {
 }
 
 function hidebackground() {
-    console.log("unhidgin")
     var header = document.getElementsByClassName("background")[0]
     header.classList.add("hideItem")
 }
