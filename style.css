@@ -41,6 +41,106 @@ body {
     right: 80px;
     bottom: 70px;
 }
+#five {
+    position: absolute;
+    right: 150px;
+    bottom: 5px;
+    z-index: 5;
+}
+#six {
+    position: absolute;
+    right: 250px;
+    bottom: 5px;
+    z-index: 6;
+}
+#seven {
+    position: absolute;
+    right: 450px;
+    bottom: 15px;
+    z-index: 7;
+}
+#eight {
+    position: absolute;
+    right: 550px;
+    bottom: 5px;
+    z-index: 8;
+}
+#nine {
+    position: absolute;
+    right: 250px;
+    bottom: 20px;
+    z-index: 9;
+}
+#ten {
+    position: absolute;
+    right: 550px;
+    bottom: 40px;
+    z-index: 10;
+
+}
+#eleven {
+    position: absolute;
+    right: 150px;
+    bottom: 2px;
+    z-index: 11;
+
+}
+#twelve {
+    position: absolute;
+    right: 50px;
+    bottom: 10px;
+    z-index: 12;
+
+}
+#thirteen {
+    position: absolute;
+    right: 100px;
+    bottom: 70px;
+    z-index: 13;
+
+}
+#fourteen {
+    position: absolute;
+    right: 80px;
+    bottom: 100px;
+    z-index: 14;
+
+}
+#fifteen {
+    position: absolute;
+    right: 180px;
+    bottom: 100px;
+    z-index: 15;
+
+}
+#sixteen {
+    position: absolute;
+    right: 380px;
+    bottom: 10px;
+    z-index: 16;
+
+}
+#seventeen {
+    position: absolute;
+    right: 180px;
+    bottom: 100px;
+    z-index: 17;
+
+}
+#eighteen {
+    position: absolute;
+    right: 80px;
+    bottom: 600px;
+    z-index: 18;
+
+}
+#nineteen {
+    position: absolute;
+    right: 380px;
+    bottom: 200px;
+    z-index: 19;
+
+}
 
 .startPiece {
     position: relative;
